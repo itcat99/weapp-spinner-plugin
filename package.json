@@ -1,0 +1,31 @@
+{
+  "name": "weapp-spinner-plugin",
+  "version": "1.0.0",
+  "description": "This is a Spinner plugin for weapp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itcat99/weapp-spinner-plugin.git"
+  },
+  "keywords": [
+    "spinner",
+    "weapp",
+    "plugin"
+  ],
+  "author": "FreMaNgo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/itcat99/weapp-spinner-plugin/issues"
+  },
+  "homepage": "https://github.com/itcat99/weapp-spinner-plugin#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.5.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

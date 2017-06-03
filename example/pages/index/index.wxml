@@ -1,0 +1,15 @@
+<import is="spinner" src="../../spinner/spinner.wxml" />
+
+<view class="main">
+  <text class="title">Spinner Plugin Demo</text>
+
+  <block wx:for="{{spinners}}" wx:key="*this">
+    <template is="spinner" data="{{...item}}"></template>
+  </block>
+
+  <view class='view'>
+    <text class="view-info" wx:for="{{viewInfo}}" wx:key="*this">
+      index: {{item.index}} | value: {{item.val}} | Max: {{item.max}} | Min: {{item.min}}
+    </text>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+.spinner {
+  display: flex;
+  width: 80px;
+  height: 30px;
+  border: 1px solid lightpink;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+.spinner-minus,
+.spinner-plus {
+  width: 25px;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.spinner-input {
+  text-align: center;
+  width: 25px;
+  height: 100%;
+  line-height: 30px;
+  border-left: 1px solid lightpink;
+  border-right: 1px solid lightpink;
+  flex-grow: 0;
+}
