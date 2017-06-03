@@ -49,7 +49,7 @@ npm i
   <template is='spinner' data='{{...item}}'></template>
 </block>
 ```
-4. 在`onLoad`中初始化spinner
+4. 在`onLoad`中初始化spinner
 ```js
 onLoad(){
   new Spinner({
