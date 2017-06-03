@@ -1,7 +1,7 @@
-<template name="spinner">
-  <view class="spinner">
-    <view class="spinner-minus" hover-class='spinner-hover' bindtap="spinnerMinus" data-index='{{index}}'>-</view>
-    <input class="spinner-input" type="number" value="{{val}}" maxlength="9999" bindconfirm="spinnerInput" data-index='{{index}}' />
-    <view class="spinner-plus" hover-class='spinner-hover' bindtap="spinnerPlus" data-index='{{index}}'>+</view>
+<template name='spinner'>
+  <view class='spinner'>
+    <view class='spinner-minus' hover-class='spinner-hover' bindtap='spinnerMinus' data-index='{{index}}'>-</view>
+    <input class='spinner-input' type='number' value='{{val}}' maxlength='9999' bindconfirm='spinnerInput' bindblur='spinnerInput' data-index='{{index}}' />
+    <view class='spinner-plus' hover-class='spinner-hover' bindtap='spinnerPlus' data-index='{{index}}'>+</view>
   </view>
 </template>
