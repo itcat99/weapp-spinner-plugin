@@ -1,5 +1,6 @@
 # weapp-spinner-plugin
 一个weapp的spinner插件。
+![img]('https://github.com/itcat99/weapp-spinner-plugin/tree/master/imgs/spinner.png')
 
 # 结构 | State
 ```
