@@ -1,7 +1,7 @@
 <template name="spinner">
   <view class="spinner">
     <view class="spinner-minus" bindtap="spinnerMinus" data-index='{{index}}'>-</view>
-    <input class="spinner-input" type="text" value="{{val}}" maxlength="9999" bindinput="spinnerInput" data-index='{{index}}' />
+    <input class="spinner-input" type="number" value="{{val}}" maxlength="9999" bindconfirm="spinnerInput" data-index='{{index}}' />
     <view class="spinner-plus" bindtap="spinnerPlus" data-index='{{index}}'>+</view>
   </view>
 </template>

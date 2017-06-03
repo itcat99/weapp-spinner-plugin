@@ -46,7 +46,7 @@ var Spinner = function () {
     value: function judge() {
       this.data.forEach(function (v, i) {
         v.min = v.min === undefined ? 0 : v.min;
-        v.max = v.max === undefined ? 999 : v.max;
+        v.max = v.max === undefined ? 10 : v.max;
         v.val = v.val === undefined ? 0 : v.val;
       });
 

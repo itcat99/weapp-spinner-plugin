@@ -1,27 +1,59 @@
+/*
+  vars
+*/
+
+$spinner-width: 80px;
+$spinner-height: 30px;
+$spinner-font-size: 12px;
+$spinner-bg-color: #fff;
+$spinner-color: rgba(25, 25, 25, .5);
+$spinner-border-color: rgba(125, 125, 125, .2);
+$spinner-border:1px solid $spinner-border-color;
+$spinner-border-radius: 4px;
+// btn
+$btn-width: 25px;
+// input
+$input-color: rgba(25, 25, 25, .7);
+$input-width: 25px;
+// hover
+$hover-color: rgba(225, 225, 225, .2);
+
+/*
+  core
+*/
+
 .spinner {
   display: flex;
-  width: 80px;
-  height: 30px;
-  border: 1px solid lightpink;
-  font-size: 12px;
+  width: $spinner-width;
+  height: $spinner-height;
+  border: $spinner-border;
+  border-radius: $spinner-border-radius;
+  font-size: $spinner-font-size;
+  color: $spinner-color;
   box-sizing: border-box;
+  background-color: $spinner-bg-color;
 }
 
 .spinner-minus,
 .spinner-plus {
-  width: 25px;
+  width: $btn-width;
   height: 100%;
-  line-height: 30px;
+  line-height: $spinner-height;
   text-align: center;
   flex-grow: 1;
 }
 
 .spinner-input {
+  color: $input-color;
   text-align: center;
-  width: 25px;
+  width: $input-width;
   height: 100%;
-  line-height: 30px;
-  border-left: 1px solid lightpink;
-  border-right: 1px solid lightpink;
+  line-height: $spinner-height;
+  border-left: 1px solid $spinner-border-color;
+  border-right: 1px solid $spinner-border-color;
   flex-grow: 0;
+}
+
+.spinner-hover{
+  background-color: $hover-color;
 }
