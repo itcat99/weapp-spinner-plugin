@@ -22,8 +22,8 @@
 npm i
 
 # 2 step
-  # 开发
-  gulp # 生成的文件在 'example/spinner/' 内
+  # 开发
+  gulp # 生成的文件在 'example/spinner/' 内
 
   # 编译
   gulp deploy # 生成的文件在 'dist/' 内
