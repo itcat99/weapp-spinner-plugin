@@ -1,10 +1,19 @@
+/*
+  vars
+*/
+/*
+  core
+*/
 .spinner {
   display: flex;
   width: 80px;
   height: 30px;
-  border: 1px solid lightpink;
+  border: 1px solid rgba(125, 125, 125, 0.2);
+  border-radius: 4px;
   font-size: 12px;
-  box-sizing: border-box; }
+  color: rgba(25, 25, 25, 0.5);
+  box-sizing: border-box;
+  background-color: #fff; }
 
 .spinner-minus,
 .spinner-plus {
@@ -15,10 +24,14 @@
   flex-grow: 1; }
 
 .spinner-input {
+  color: rgba(25, 25, 25, 0.7);
   text-align: center;
   width: 25px;
   height: 100%;
   line-height: 30px;
-  border-left: 1px solid lightpink;
-  border-right: 1px solid lightpink;
+  border-left: 1px solid rgba(125, 125, 125, 0.2);
+  border-right: 1px solid rgba(125, 125, 125, 0.2);
   flex-grow: 0; }
+
+.spinner-hover {
+  background-color: rgba(225, 225, 225, 0.2); }
