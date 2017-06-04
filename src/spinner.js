@@ -2,6 +2,7 @@ const _default = {
   val: 0,
   max: 999,
   min: 0,
+  target: 'spinners',
   onChange(data) {
     return false;
   }
@@ -14,7 +15,7 @@ class Spinner {
 
     this.options = Object.assign({}, _default, options);
 
-    this.data = this.page.data.spinners;
+    this.data = this.page.data[this.options.target];
     this.init();
   }
 
@@ -31,7 +32,7 @@ class Spinner {
 
   format() {
     this.data.forEach(v => {
-      
+
       for (let key in v) {
         v[key] = parseInt(v[key], 10);
       }
