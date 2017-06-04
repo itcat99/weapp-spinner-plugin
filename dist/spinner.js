@@ -31,7 +31,7 @@ var Spinner = function () {
   _createClass(Spinner, [{
     key: "init",
     value: function init() {
-      this.judge();
+      this.format();
       this.bind();
     }
   }, {
@@ -42,9 +42,14 @@ var Spinner = function () {
       this.page["spinnerInput"] = this.input();
     }
   }, {
-    key: "judge",
-    value: function judge() {
-      this.data.forEach(function (v, i) {
+    key: "format",
+    value: function format() {
+      this.data.forEach(function (v) {
+
+        for (var key in v) {
+          v[key] = parseInt(v[key], 10);
+        }
+
         v.min = v.min === undefined ? 0 : v.min;
         v.max = v.max === undefined ? 10 : v.max;
         v.val = v.val === undefined ? 0 : v.val;

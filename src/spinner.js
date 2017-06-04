@@ -19,7 +19,7 @@ class Spinner {
   }
 
   init() {
-    this.judge();
+    this.format();
     this.bind();
   }
 
@@ -29,8 +29,13 @@ class Spinner {
     this.page[`spinnerInput`] = this.input();
   }
 
-  judge() {
-    this.data.forEach((v, i) => {
+  format() {
+    this.data.forEach(v => {
+      
+      for (let key in v) {
+        v[key] = parseInt(v[key], 10);
+      }
+
       v.min = v.min === undefined ? 0 : v.min;
       v.max = v.max === undefined ? 10 : v.max;
       v.val = v.val === undefined ? 0 : v.val;

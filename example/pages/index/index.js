@@ -5,17 +5,17 @@ var app = getApp();
 Page({
   data: {
     spinners: [{
-      index: 0,
+      index: "0",
       min: 0,
       max: 20,
       val: 10
     }, {
-      index: 1,
+      index: "01",
       min: 100,
       max: 200,
       val: 111
     }, {
-      index: 2,
+      index: "02",
       min: -10,
       max: 10,
       val: 1
