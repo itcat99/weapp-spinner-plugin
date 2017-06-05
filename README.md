@@ -13,7 +13,7 @@
 |  |- app.json
 |
 |- dist // 编译输出目录
-|- src // 源文件 
+|- src // 源文件
 ```
 
 # 编译 | Compile
@@ -42,7 +42,7 @@ npm i
       val: 0 // 初始数据
     }]
   }
-``` 
+```
 3. 在wxml中添加相应的模版标签
 ```html
 <block wx:for={{spinners}} wx:key="*this">
@@ -62,16 +62,24 @@ onLoad(){
 {
   val: 0,
   max: 10,
-  min: 0
+  min: 0,
+  target: 'spinners'
 }
 ```
+| name   | type   | defalut  | description |
+| -------|:-------|:---------|:------------|
+| val    | number | 0        | 初始值       |
+| max    | number | 10       | 最大值       |
+| min    | number | 0        | 最小值       |
+| target | string | spinners | page.data中spinner的JSON数组名字，spinner的JSON数组需要单独存放，不能和其他数据混在一起用。 一个new Spinner()对应一个target |
 
 可以在初始化的时候修改默认值
 ```js
 new Spinner({
   val: 10,
   max: 100,
-  min: -100
+  min: -100,
+  target: 'productCount'
 });
 ```
 
